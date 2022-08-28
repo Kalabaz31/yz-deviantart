@@ -1,0 +1,65 @@
+.container {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--gray9);
+
+    z-index: 2;
+
+
+    .left,
+    .right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .btnMenu,
+    a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .left {
+
+        .btnMenu {
+            cursor: pointer;
+
+
+            svg {
+                color: var(--gray1);
+                font-size: 28px;
+                transition: color 0.2s ease-in-out;
+            }
+
+            &:hover {
+                svg {
+                    color: var(--green5);
+                }
+            }
+        }
+
+        .logo {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .right {
+        a {
+            transition: color 0.2s ease-in-out;
+
+            &:hover {
+
+                color: var(--green5);
+            }
+        }
+    }
+
+    .btnMenu {}
+}
